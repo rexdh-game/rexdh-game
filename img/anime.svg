@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2b1a4d"/>
+      <stop offset="50%" stop-color="#1b2450"/>
+      <stop offset="100%" stop-color="#3a1f45"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#ffd166" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="h1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffb03a"/><stop offset="100%" stop-color="#e07a10"/></linearGradient>
+    <linearGradient id="h2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#63c8ff"/><stop offset="100%" stop-color="#2d7fd6"/></linearGradient>
+    <linearGradient id="h3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff8ec4"/><stop offset="100%" stop-color="#d94b96"/></linearGradient>
+    <linearGradient id="h4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4b5a86"/><stop offset="100%" stop-color="#1d2440"/></linearGradient>
+    <linearGradient id="h5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a8ff9e"/><stop offset="100%" stop-color="#3fbf6a"/></linearGradient>
+    <linearGradient id="h6" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c9a2ff"/><stop offset="100%" stop-color="#7b45d6"/></linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffe3cc"/><stop offset="100%" stop-color="#f6c9a8"/></linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- speed lines -->
+  <g opacity=".18" stroke="#ffffff" stroke-width="2">
+    <line x1="0" y1="60" x2="800" y2="20"/><line x1="0" y1="140" x2="800" y2="90"/>
+    <line x1="0" y1="380" x2="800" y2="430"/><line x1="0" y1="460" x2="800" y2="500"/>
+  </g>
+  <ellipse cx="400" cy="230" rx="380" ry="220" fill="url(#glow)"/>
+
+  <!-- ===== character factory (heads) ===== -->
+  <!-- 1: spiky orange (shonen) -->
+  <g transform="translate(110,250)">
+    <path d="M-58 -6 L-70 -58 L-40 -34 L-30 -78 L-6 -40 L10 -84 L26 -40 L48 -70 L44 -26 L74 -46 L58 -2 Z" fill="url(#h1)"/>
+    <ellipse cx="0" cy="8" rx="46" ry="52" fill="url(#skin)"/>
+    <path d="M-52 -6 q52 -34 104 0 q-6 -40 -52 -44 q-46 4 -52 44 Z" fill="url(#h1)"/>
+    <ellipse cx="-18" cy="10" rx="10" ry="13" fill="#fff"/><circle cx="-17" cy="12" r="7" fill="#2b6cff"/><circle cx="-17" cy="12" r="3" fill="#0b1b3a"/><circle cx="-20" cy="8" r="2.4" fill="#fff"/>
+    <ellipse cx="18" cy="10" rx="10" ry="13" fill="#fff"/><circle cx="19" cy="12" r="7" fill="#2b6cff"/><circle cx="19" cy="12" r="3" fill="#0b1b3a"/><circle cx="16" cy="8" r="2.4" fill="#fff"/>
+    <path d="M-8 34 q8 8 16 0" stroke="#b5615a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M-30 -4 q12 -7 22 -1 M8 -5 q10 -6 22 1" stroke="#8a4a12" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- 2: blue long hair -->
+  <g transform="translate(270,215)">
+    <path d="M-62 40 q-12 -96 62 -96 q74 0 62 96 q-14 -46 -62 -46 q-48 0 -62 46 Z" fill="url(#h2)"/>
+    <ellipse cx="0" cy="4" rx="44" ry="50" fill="url(#skin)"/>
+    <path d="M-52 -6 q10 -44 52 -44 q42 0 52 44 q-24 -22 -52 -22 q-28 0 -52 22 Z" fill="url(#h2)"/>
+    <ellipse cx="-17" cy="6" rx="10" ry="13" fill="#fff"/><circle cx="-16" cy="8" r="7" fill="#7a3fd6"/><circle cx="-16" cy="8" r="3" fill="#180b2e"/><circle cx="-19" cy="4" r="2.4" fill="#fff"/>
+    <ellipse cx="17" cy="6" rx="10" ry="13" fill="#fff"/><circle cx="18" cy="8" r="7" fill="#7a3fd6"/><circle cx="18" cy="8" r="3" fill="#180b2e"/><circle cx="15" cy="4" r="2.4" fill="#fff"/>
+    <path d="M-6 30 q6 6 12 0" stroke="#b5615a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M-56 34 q-8 40 -2 66 M56 34 q8 40 2 66" stroke="#2d7fd6" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- 3: pink twin-tails -->
+  <g transform="translate(430,255)">
+    <circle cx="-58" cy="-6" r="20" fill="url(#h3)"/><circle cx="58" cy="-6" r="20" fill="url(#h3)"/>
+    <path d="M-70 6 q-10 44 4 78 M70 6 q10 44 -4 78" stroke="#d94b96" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <ellipse cx="0" cy="4" rx="43" ry="49" fill="url(#skin)"/>
+    <path d="M-50 -8 q8 -44 50 -44 q42 0 50 44 q-22 -24 -50 -24 q-28 0 -50 24 Z" fill="url(#h3)"/>
+    <ellipse cx="-16" cy="6" rx="10" ry="13" fill="#fff"/><circle cx="-15" cy="8" r="7" fill="#e0489a"/><circle cx="-15" cy="8" r="3" fill="#3a0b26"/><circle cx="-18" cy="4" r="2.4" fill="#fff"/>
+    <ellipse cx="16" cy="6" rx="10" ry="13" fill="#fff"/><circle cx="17" cy="8" r="7" fill="#e0489a"/><circle cx="17" cy="8" r="3" fill="#3a0b26"/><circle cx="14" cy="4" r="2.4" fill="#fff"/>
+    <path d="M-7 30 q7 8 14 0" stroke="#b5615a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="-30" cy="22" r="5" fill="#ff9bc4" opacity=".55"/><circle cx="30" cy="22" r="5" fill="#ff9bc4" opacity=".55"/>
+  </g>
+
+  <!-- 4: dark hero (mask/scar vibe) -->
+  <g transform="translate(590,225)">
+    <path d="M-56 -4 q4 -56 56 -56 q52 0 56 56 q-18 -34 -56 -34 q-38 0 -56 34 Z" fill="url(#h4)"/>
+    <ellipse cx="0" cy="6" rx="44" ry="50" fill="url(#skin)"/>
+    <path d="M-52 -8 q14 -40 52 -40 q38 0 52 40 q-26 -18 -52 -18 q-26 0 -52 18 Z" fill="url(#h4)"/>
+    <ellipse cx="-17" cy="8" rx="10" ry="12" fill="#fff"/><circle cx="-16" cy="10" r="7" fill="#39d0ff"/><circle cx="-16" cy="10" r="3" fill="#052030"/><circle cx="-19" cy="6" r="2.4" fill="#fff"/>
+    <ellipse cx="17" cy="8" rx="10" ry="12" fill="#fff"/><circle cx="18" cy="10" r="7" fill="#39d0ff"/><circle cx="18" cy="10" r="3" fill="#052030"/><circle cx="15" cy="6" r="2.4" fill="#fff"/>
+    <path d="M-30 -2 q12 -8 22 -2 M8 -4 q10 -6 22 2" stroke="#0e1428" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M-8 34 q8 5 16 0" stroke="#8f4a45" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M26 -14 l6 26" stroke="#c96a5f" stroke-width="2.5" opacity=".8"/>
+  </g>
+
+  <!-- 5: green short (front-left small) -->
+  <g transform="translate(190,400) scale(.82)">
+    <path d="M-50 -8 q6 -50 50 -50 q44 0 50 50 q-20 -28 -50 -28 q-30 0 -50 28 Z" fill="url(#h5)"/>
+    <ellipse cx="0" cy="6" rx="42" ry="48" fill="url(#skin)"/>
+    <ellipse cx="-16" cy="8" rx="9.5" ry="12" fill="#fff"/><circle cx="-15" cy="10" r="6.6" fill="#2fae5e"/><circle cx="-15" cy="10" r="2.8" fill="#08230f"/><circle cx="-18" cy="6" r="2.2" fill="#fff"/>
+    <ellipse cx="16" cy="8" rx="9.5" ry="12" fill="#fff"/><circle cx="17" cy="10" r="6.6" fill="#2fae5e"/><circle cx="17" cy="10" r="2.8" fill="#08230f"/><circle cx="14" cy="6" r="2.2" fill="#fff"/>
+    <path d="M-6 30 q6 7 12 0" stroke="#b5615a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- 6: purple hooded (front-right small) -->
+  <g transform="translate(520,410) scale(.82)">
+    <path d="M-52 8 q-8 -62 52 -62 q60 0 52 62 q-22 -32 -52 -32 q-30 0 -52 32 Z" fill="url(#h6)"/>
+    <ellipse cx="0" cy="8" rx="42" ry="48" fill="url(#skin)"/>
+    <path d="M-50 -4 q12 -42 50 -42 q38 0 50 42 q-24 -20 -50 -20 q-26 0 -50 20 Z" fill="url(#h6)"/>
+    <ellipse cx="-16" cy="10" rx="9.5" ry="12" fill="#fff"/><circle cx="-15" cy="12" r="6.6" fill="#b07bff"/><circle cx="-15" cy="12" r="2.8" fill="#1d0b3a"/><circle cx="-18" cy="8" r="2.2" fill="#fff"/>
+    <ellipse cx="16" cy="10" rx="9.5" ry="12" fill="#fff"/><circle cx="17" cy="12" r="6.6" fill="#b07bff"/><circle cx="17" cy="12" r="2.8" fill="#1d0b3a"/><circle cx="14" cy="8" r="2.2" fill="#fff"/>
+    <path d="M-6 32 q6 7 12 0" stroke="#b5615a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#ffd166" opacity=".9">
+    <path d="M60 90 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 Z"/>
+    <path d="M730 120 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z"/>
+    <path d="M690 350 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 Z"/>
+    <path d="M100 330 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5 Z"/>
+  </g>
+</svg>
