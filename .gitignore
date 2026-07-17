@@ -1,0 +1,8 @@
+gen/__pycache__/
+gen/_img_cache.json
+gen/_passports_log.txt
+node_modules/
+.wrangler/
+.claude/
+gen/
+wrangler.toml
