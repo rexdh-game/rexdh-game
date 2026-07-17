@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https://flagcdn.com https://cdn.simpleicons.org https://upload.wikimedia.org https://commons.wikimedia.org https://cdn.myanimelist.net https://static.tvmaze.com data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https://flagcdn.com https://cdn.simpleicons.org https://upload.wikimedia.org https://commons.wikimedia.org https://cdn.myanimelist.net https://static.tvmaze.com https://s4.anilist.co data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
