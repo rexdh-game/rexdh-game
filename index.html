@@ -193,7 +193,7 @@ html{scroll-behavior:smooth}
 #s-board{background:transparent}
 .b-header{background:rgba(16,22,42,.75);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:.55rem 1rem;display:flex;align-items:center;gap:.6rem;flex-shrink:0}
 .b-logo{background:var(--or-grad);border-radius:10px;padding:.28rem .7rem;font-size:1.1rem;font-weight:900;color:#3a2a05;flex-shrink:0;box-shadow:0 3px 12px rgba(240,180,41,.3);letter-spacing:.03em}
-.turn-pill{background:var(--or-grad);border-radius:20px;padding:.28rem .95rem;font-size:.82rem;font-weight:800;white-space:nowrap;flex-shrink:0;color:#3a2a05;box-shadow:0 2px 10px rgba(240,180,41,.2);cursor:pointer;transition:.15s;user-select:none}
+.turn-pill{background:var(--or-grad);border-radius:20px;padding:.28rem .95rem;font-size:.82rem;font-weight:800;white-space:nowrap;flex-shrink:0;color:#3a2a05;box-shadow:0 2px 10px rgba(240,180,41,.2);cursor:default;transition:.15s;user-select:none}
 /* شارة "نقاط مضاعفة مُفعّلة" — تنتظر السؤال القادم */
 .dbl-pending{display:none}
 .dbl-pending.on{display:block;background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;
@@ -452,7 +452,7 @@ html{scroll-behavior:smooth}
 <div id="s-board" class="screen">
   <div class="b-header">
     <div class="b-logo">ريكسد</div>
-    <div class="turn-pill" id="turn-pill" onclick="toggleTurn()" title="اضغط لتبديل الدور">🔄 دور: <span id="turn-name">...</span></div>
+    <div class="turn-pill" id="turn-pill" title="يتبدل تلقائياً بعد كل سؤال">🔁 دور: <span id="turn-name">...</span></div>
     <div class="dbl-pending" id="dbl-pending"></div>
     <div class="h-mid" id="h-mid"></div>
     <div class="h-ctrl">
