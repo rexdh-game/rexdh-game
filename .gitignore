@@ -6,3 +6,4 @@ node_modules/
 .claude/
 gen/
 wrangler.toml
+.cfdeploy/
