@@ -7,3 +7,4 @@ node_modules/
 gen/
 wrangler.toml
 .cfdeploy/
+graphify-out/
