@@ -8,3 +8,9 @@ gen/
 wrangler.toml
 .cfdeploy/
 graphify-out/
+
+# سرّ إرسال البريد: mailer.gs في المستودع قالبٌ فيه قيمة نائبة فقط.
+# النسخة المعبَّأة بالسرّ الحقيقي تُلصق في script.google.com ولا تُحفظ هنا.
+mailer.local.gs
+.dev.vars
+.wrangler/
