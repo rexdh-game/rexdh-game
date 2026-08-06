@@ -13,15 +13,27 @@ Pages **لا تقرؤه إطلاقاً** — كان يعطي شعوراً زائ
 | الحماية | الآلية | الحالة |
 |---|---|---|
 | Content-Security-Policy | وسم `<meta>` داخل الصفحة، يولّده `gen/build.py` | ✅ فعّالة |
-| منع السكربتات غير الموقَّعة | بصمة `sha256` لكل سكربت مضمَّن | ✅ فعّالة |
+| منع السكربتات غير الموقَّعة | بصمة `sha256` لكل سكربت مضمَّن (5) | ✅ فعّالة |
+| منع الأنماط غير الموقَّعة | بصمة `sha256` لكتلة `<style>` (1) | ✅ فعّالة |
+| `Referrer-Policy: no-referrer` | وسم `<meta name="referrer">` | ✅ فعّالة |
 | HTTPS إجباري | `Strict-Transport-Security` من GitHub نفسها | ✅ فعّالة |
 | منع التضمين في إطار | حارس جافاسكربت في `gen/_orig.js` | ⚠️ جزئية |
 
 ### ما لا يمكن تحقيقه بلا خادم
 
-`X-Frame-Options` · `Referrer-Policy` · `Permissions-Policy` ·
-`Cross-Origin-Opener-Policy` — كلها **رؤوس حقيقية فقط**، وتُتجاهَل داخل
-وسم `<meta>`. وكذلك `frame-ancestors` في CSP: صالحة كرأس، مُتجاهَلة كـmeta.
+`X-Frame-Options` · `Permissions-Policy` · `Cross-Origin-Opener-Policy` —
+رؤوس حقيقية فقط، تُتجاهَل داخل `<meta>`. وكذلك `frame-ancestors` في CSP:
+صالحة كرأس، مُتجاهَلة كـmeta.
+
+أما `Referrer-Policy` فهي **استثناء**: تعمل عبر `<meta name="referrer">`
+وقد فُعِّلت بالفعل.
+
+### سمات style= في العلامات
+
+ممنوعة الآن — نُقلت الثماني الموجودة إلى أصناف `.u-*` في كتلة الأنماط.
+أي سمة `style=` جديدة في HTML **لن تُطبَّق**. استخدم صنفاً، أو اكتب النمط
+من جافاسكربت عبر `el.style.x = y` (CSSOM لا تخضع لـCSP، وهكذا يعمل
+GSAP وThree.js بلا مشكلة).
 
 ## تعديل CSP
 
