@@ -14,3 +14,7 @@ graphify-out/
 mailer.local.gs
 .dev.vars
 .wrangler/
+
+# مخرجات فحص مؤقّتة
+_blobs.txt
+_ds.json
